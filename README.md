@@ -5,3 +5,6 @@
 
 ### full url, plaintext output, custom wordlist
     dirsearch --full-url --format plain -o scan.txt -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+
+### Full url, plaintext output, wordlist, add extensions
+    dirsearch --full-url --format plain -o scan.txt -e php,html,js -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
