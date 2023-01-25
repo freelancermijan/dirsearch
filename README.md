@@ -17,3 +17,6 @@
 
 ### above all + Exclude Extensions
     dirsearch --full-url --format plain -o dirsearchScan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+
+#### Full url, output plzintext, include extension, exclude extension, status code, recursive mode
+    dirsearch --full-url --format plain -o scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r 3 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
